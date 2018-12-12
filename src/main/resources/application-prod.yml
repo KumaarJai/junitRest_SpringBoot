@@ -1,0 +1,6 @@
+welcome: "Production"
+
+server:
+  servlet:
+    context-path: /junity
+    

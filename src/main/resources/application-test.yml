@@ -1,0 +1,6 @@
+welcome: "Development"
+
+server:
+  servlet:
+    context-path: /junity
+    
