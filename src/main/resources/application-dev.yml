@@ -3,6 +3,8 @@ welcome: "Development"
 server:
   servlet:
     context-path: /junity
+
+  port: 8080
     
     
 spring:
@@ -11,3 +13,7 @@ spring:
     username: sa
     password: 
     driver-class-name: org.h2.Driver
+    
+eureka:
+  server:
+    my-url: http://localhost:8761

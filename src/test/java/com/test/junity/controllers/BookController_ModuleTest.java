@@ -16,7 +16,7 @@ import org.mockito.MockitoAnnotations;
 import com.test.junity.models.Book;
 import com.test.junity.services.LibraryService;
 
-class BookControllerMock {
+public class BookController_ModuleTest{
 
 	@InjectMocks
 	BookController api;
@@ -51,5 +51,7 @@ class BookControllerMock {
 		assertEquals("TestBook", booksList.get(0).getName());
 		
 	}
+	
+	
 
 }

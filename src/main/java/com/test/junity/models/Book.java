@@ -14,7 +14,7 @@ import lombok.ToString;
 @Entity
 @ToString
 @Table(name = "Book")
-public class Book {
+public class Book implements Cloneable {	
 	@Id
 	@Column
     @GeneratedValue
@@ -24,5 +24,8 @@ public class Book {
 	@Getter @Setter @Column private String description;
 	@Getter @Setter @Column private String numPages;
 	
-	
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }

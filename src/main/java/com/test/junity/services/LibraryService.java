@@ -25,9 +25,9 @@ public class LibraryService {
 		return repo.findById(id).get();
 	}
 	
-	public void addOrUpdateBook(Book b) {
+	public Book addOrUpdateBook(Book b) {
 		System.out.println("Adding/Updating book : "+b.toString());
-		repo.save(b);
+		return repo.save(b);
 	}
 	
 	public void deleteBook(int id) {
